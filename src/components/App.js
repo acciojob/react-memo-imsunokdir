@@ -17,7 +17,7 @@ const App = () => {
     setCounter(counter + 1);
   };
   const handleSubmit = () => {
-    if (inputValue.trim()) {
+    if (inputValue.trim().length > 5) {
       setTodo([...todo, inputValue.trim()]);
       setInputValue("");
     }
@@ -27,6 +27,11 @@ const App = () => {
     console.log("asdasdasdasd");
     return todo.length;
   }, [todo]);
+
+  const veryBigNum = useMemo(() => {
+    for (let i = 0; i < 1000000000; i++) {}
+    return 1000000000;
+  }, [counter]);
 
   return (
     <div id="main">
@@ -48,6 +53,8 @@ const App = () => {
         Submit
       </button>
       <br />
+      <h1>Expensive Calculation</h1>
+      <p id="calc">{veryBigNum}</p>
       <UseMemo taskCount={taskCount} />
       <ReactMemo todo={todo} />
     </div>
