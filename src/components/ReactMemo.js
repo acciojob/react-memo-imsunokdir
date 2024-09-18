@@ -6,7 +6,11 @@ const ReactMemo = React.memo(({ todo }) => {
       <h1>Task List</h1>
       <ul>
         {todo.map((item, i) => {
-          return <li key={i}>{item}</li>;
+          return (
+            <li key={i} id={`todo-${i}`}>
+              {item}
+            </li>
+          );
         })}
       </ul>
     </div>

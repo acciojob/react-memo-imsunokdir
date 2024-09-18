@@ -35,10 +35,8 @@ const App = () => {
         Add todo
       </button>
       <br />
-      <h1>Counter:{counter}</h1>
-      <button onClick={incrementCounter} id="incr-cnt">
-        Increment
-      </button>
+      <h1 id="incr-cnt"> Counter:{counter}</h1>
+      <button onClick={incrementCounter}>Increment</button>
       <br />
       <input
         type="text"
@@ -46,7 +44,9 @@ const App = () => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit} id="skill-btn">
+        Submit
+      </button>
       <br />
       <UseMemo taskCount={taskCount} />
       <ReactMemo todo={todo} />
