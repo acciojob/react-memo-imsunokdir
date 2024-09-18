@@ -29,15 +29,20 @@ const App = () => {
   }, [todo]);
 
   return (
-    <div>
+    <div id="main">
       <h1>Todo List</h1>
-      <button onClick={addTodo}>Add todo</button>
+      <button onClick={addTodo} id="add-todo-btn">
+        Add todo
+      </button>
       <br />
       <h1>Counter:{counter}</h1>
-      <button onClick={incrementCounter}>Increment</button>
+      <button onClick={incrementCounter} id="incr-cnt">
+        Increment
+      </button>
       <br />
       <input
         type="text"
+        id="skill-input"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
