@@ -7,7 +7,7 @@ const ReactMemo = React.memo(({ todo }) => {
       <ul>
         {todo.map((item, i) => {
           return (
-            <li key={i} id={`todo-${i}`}>
+            <li key={i} id={`todo-${i} item-jumbotron`}>
               {item}
             </li>
           );

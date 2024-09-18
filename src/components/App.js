@@ -10,7 +10,7 @@ const App = () => {
   const [inputValue, setInputValue] = useState("");
 
   const addTodo = () => {
-    setTodo([...todo, `New todo`]);
+    setTodo([...todo, `New Todo`]);
   };
 
   const incrementCounter = () => {
@@ -35,7 +35,7 @@ const App = () => {
         Add todo
       </button>
       <br />
-      <h1 id="incr-cnt"> Counter:{counter}</h1>
+      <h1 id="incr-cnt">{counter}</h1>
       <button onClick={incrementCounter}>Increment</button>
       <br />
       <input
