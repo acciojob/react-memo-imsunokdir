@@ -30,7 +30,7 @@ const App = () => {
 
   const veryBigNum = useMemo(() => {
     for (let i = 0; i < 1000000000; i++) {}
-    return 1000000001;
+    return counter * 2;
   }, [counter]);
 
   return (
