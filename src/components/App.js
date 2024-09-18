@@ -41,7 +41,9 @@ const App = () => {
       </button>
       <br />
       <h1 id="incr-cnt">{counter}</h1>
-      <button onClick={incrementCounter}>Increment</button>
+      <button id="incr-btn" onClick={incrementCounter}>
+        Increment
+      </button>
       <br />
       <input
         type="text"
