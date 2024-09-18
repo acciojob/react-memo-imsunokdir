@@ -40,10 +40,8 @@ const App = () => {
         Add todo
       </button>
       <br />
-      <h1>{counter}</h1>
-      <button id="incr-cnt" onClick={incrementCounter}>
-        Increment
-      </button>
+      <h1 id="incr-cnt">{counter}</h1>
+      <button onClick={incrementCounter}>Increment</button>
       <br />
       <input
         type="text"
