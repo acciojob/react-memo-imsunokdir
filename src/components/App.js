@@ -33,7 +33,7 @@ const App = () => {
     const rand = Math.round(Math.random());
     // Simulate a heavy calculation
     for (let i = 0; i < 1000000000; i++) {}
-    return 100000000 + rand; // Always return 1000000000
+    return 1000000000 + rand; // Always return 1000000000
   }, [counter]);
 
   return (
